@@ -1,0 +1,131 @@
+(* Content-type: application/vnd.wolfram.mathematica *)
+
+(*** Wolfram Notebook File ***)
+(* http://www.wolfram.com/nb *)
+
+(* CreatedBy='Wolfram 14.1' *)
+
+(*CacheID: 234*)
+(* Internal cache information:
+NotebookFileLineBreakTest
+NotebookFileLineBreakTest
+NotebookDataPosition[       154,          7]
+NotebookDataLength[      4816,        123]
+NotebookOptionsPosition[      4245,        105]
+NotebookOutlinePosition[      4638,        121]
+CellTagsIndexPosition[      4595,        118]
+WindowFrame->Normal*)
+
+(* Beginning of Notebook Content *)
+Notebook[{
+
+Cell[CellGroupData[{
+Cell[BoxData[
+ RowBox[{"Manipulate", "[", "\[IndentingNewLine]", 
+  RowBox[{
+   RowBox[{
+    RowBox[{"NestList", "[", 
+     RowBox[{
+      RowBox[{
+       RowBox[{"r", " ", "*", 
+        RowBox[{"Sin", "[", "#", "]"}]}], "&"}], ",", "0.01", ",", "100"}], 
+     "]"}], "//", "\[IndentingNewLine]", 
+    RowBox[{
+     RowBox[{"ListPlot", "[", 
+      RowBox[{"#", ",", 
+       RowBox[{"PlotRange", "->", 
+        RowBox[{"{", 
+         RowBox[{"0", ",", "r"}], "}"}]}]}], "]"}], "&"}]}], ",", 
+   "\[IndentingNewLine]", 
+   RowBox[{"{", 
+    RowBox[{"r", ",", "1", ",", "4"}], "}"}]}], " ", 
+  RowBox[{"(*", " ", "3.84", " ", "*)"}], "\[IndentingNewLine]", 
+  "]"}]], "Input",
+ CellChangeTimes->{{3.9354400021007977`*^9, 3.935440005139711*^9}},
+ CellLabel->"In[2]:=",ExpressionUUID->"381b405f-7a19-43c6-a550-f9cb81ba0195"],
+
+Cell[BoxData[
+ TagBox[
+  StyleBox[
+   DynamicModuleBox[{WolframChatbookInstaller`Private`r$$ = 2.8, 
+    Typeset`show$$ = True, Typeset`bookmarkList$$ = {}, 
+    Typeset`bookmarkMode$$ = "Menu", Typeset`animator$$, Typeset`animvar$$ = 
+    1, Typeset`name$$ = "\"untitled\"", Typeset`specs$$ = {{
+      Hold[WolframChatbookInstaller`Private`r$$], 1, 4, ControlType -> 
+      Manipulator}}, Typeset`size$$ = {
+    360., {112.68403477895158`, 118.41596837270158`}}, Typeset`update$$ = 0, 
+    Typeset`initDone$$, Typeset`skipInitDone$$ = True, 
+    Typeset`keyframeActionsQ$$ = False, Typeset`keyframeList$$ = {}}, 
+    DynamicBox[Manipulate`ManipulateBoxes[
+     1, StandardForm, 
+      "Variables" :> {WolframChatbookInstaller`Private`r$$ = 1}, 
+      "ControllerVariables" :> {}, 
+      "OtherVariables" :> {
+       Typeset`show$$, Typeset`bookmarkList$$, Typeset`bookmarkMode$$, 
+        Typeset`animator$$, Typeset`animvar$$, Typeset`name$$, 
+        Typeset`specs$$, Typeset`size$$, Typeset`update$$, Typeset`initDone$$,
+         Typeset`skipInitDone$$, Typeset`keyframeActionsQ$$, 
+        Typeset`keyframeList$$}, 
+      "Body" :> (
+       ListPlot[#, PlotRange -> {0, WolframChatbookInstaller`Private`r$$}]& )[
+       
+        NestList[WolframChatbookInstaller`Private`r$$ Sin[#]& , 0.01, 100]], 
+      "Specifications" :> {{WolframChatbookInstaller`Private`r$$, 1, 4}}, 
+      "Options" :> {}, "DefaultOptions" :> {}],
+     ImageSizeCache->{403.1, {168.07446019399063`, 173.80639378774063`}},
+     SingleEvaluation->True],
+    Deinitialization:>None,
+    DynamicModuleValues:>{},
+    SynchronousInitialization->True,
+    UndoTrackedVariables:>{Typeset`show$$, Typeset`bookmarkMode$$},
+    UnsavedVariables:>{Typeset`initDone$$},
+    UntrackedVariables:>{Typeset`size$$}], "Manipulate",
+   Deployed->True,
+   StripOnInput->False],
+  Manipulate`InterpretManipulate[1]]], "Output",
+ CellChangeTimes->{{3.935439908381618*^9, 3.9354399132672653`*^9}, {
+  3.935440005863991*^9, 3.935440018178776*^9}},
+ CellLabel->"Out[2]=",ExpressionUUID->"6a19406a-4999-408b-a851-5af713def7fc"]
+}, Open  ]],
+
+Cell["\<\
+Since the domain is [0, \[Pi]], the range of the function f(x)=rsin(x) is [0, \
+r] because the range of sin(x) is [0, 1]. The function converges to 2 if r is \
+< 2.2. The number it converges to varies but gets larger as r increases up to \
+2.2. However, it splits off into more and more branches as r increases past \
+2.2. The one original branch splits into two branches between 2.2 and 2.3 and \
+these two branches split into four branches between 2.6 and 2.7. After that \
+the graph becomes chaotic and unpredictable.\
+\>", "Text",
+ CellChangeTimes->{
+  3.93543992619659*^9, {3.935440025675118*^9, 3.9354400786590853`*^9}, {
+   3.935440119291307*^9, 
+   3.935440129762792*^9}},ExpressionUUID->"3c97cee6-ca37-4276-af84-\
+e4f97b519abb"]
+},
+WindowSize->{808, 860},
+WindowMargins->{{12, Automatic}, {Automatic, 24}},
+FrontEndVersion->"14.1 for Mac OS X x86 (64-bit) (July 16, 2024)",
+StyleDefinitions->"Default.nb",
+ExpressionUUID->"9fbc7270-c63d-452a-9b1d-e6d8bcbd6518"
+]
+(* End of Notebook Content *)
+
+(* Internal cache information *)
+(*CellTagsOutline
+CellTagsIndex->{}
+*)
+(*CellTagsIndex
+CellTagsIndex->{}
+*)
+(*NotebookFileOutline
+Notebook[{
+Cell[CellGroupData[{
+Cell[576, 22, 819, 22, 111, "Input",ExpressionUUID->"381b405f-7a19-43c6-a550-f9cb81ba0195"],
+Cell[1398, 46, 2081, 41, 358, "Output",ExpressionUUID->"6a19406a-4999-408b-a851-5af713def7fc"]
+}, Open  ]],
+Cell[3494, 90, 747, 13, 121, "Text",ExpressionUUID->"3c97cee6-ca37-4276-af84-e4f97b519abb"]
+}
+]
+*)
+
