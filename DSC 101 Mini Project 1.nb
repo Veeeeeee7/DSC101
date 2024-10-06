@@ -10,10 +10,10 @@
 NotebookFileLineBreakTest
 NotebookFileLineBreakTest
 NotebookDataPosition[       154,          7]
-NotebookDataLength[      4816,        123]
+NotebookDataLength[      4817,        123]
 NotebookOptionsPosition[      4245,        105]
-NotebookOutlinePosition[      4638,        121]
-CellTagsIndexPosition[      4595,        118]
+NotebookOutlinePosition[      4639,        121]
+CellTagsIndexPosition[      4596,        118]
 WindowFrame->Normal*)
 
 (* Beginning of Notebook Content *)
@@ -72,7 +72,7 @@ Cell[BoxData[
         NestList[WolframChatbookInstaller`Private`r$$ Sin[#]& , 0.01, 100]], 
       "Specifications" :> {{WolframChatbookInstaller`Private`r$$, 1, 4}}, 
       "Options" :> {}, "DefaultOptions" :> {}],
-     ImageSizeCache->{403.1, {168.07446019399063`, 173.80639378774063`}},
+     ImageSizeCache->{403.1, {155.85446019399063`, 161.58639378774063`}},
      SingleEvaluation->True],
     Deinitialization:>None,
     DynamicModuleValues:>{},
@@ -104,7 +104,7 @@ the graph becomes chaotic and unpredictable.\
 e4f97b519abb"]
 },
 WindowSize->{808, 860},
-WindowMargins->{{12, Automatic}, {Automatic, 24}},
+WindowMargins->{{Automatic, 342}, {Automatic, 34}},
 FrontEndVersion->"14.1 for Mac OS X x86 (64-bit) (July 16, 2024)",
 StyleDefinitions->"Default.nb",
 ExpressionUUID->"9fbc7270-c63d-452a-9b1d-e6d8bcbd6518"
@@ -122,7 +122,7 @@ CellTagsIndex->{}
 Notebook[{
 Cell[CellGroupData[{
 Cell[576, 22, 819, 22, 111, "Input",ExpressionUUID->"381b405f-7a19-43c6-a550-f9cb81ba0195"],
-Cell[1398, 46, 2081, 41, 358, "Output",ExpressionUUID->"6a19406a-4999-408b-a851-5af713def7fc"]
+Cell[1398, 46, 2081, 41, 334, "Output",ExpressionUUID->"6a19406a-4999-408b-a851-5af713def7fc"]
 }, Open  ]],
 Cell[3494, 90, 747, 13, 121, "Text",ExpressionUUID->"3c97cee6-ca37-4276-af84-e4f97b519abb"]
 }

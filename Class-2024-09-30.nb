@@ -1,0 +1,459 @@
+(* Content-type: application/vnd.wolfram.mathematica *)
+
+(*** Wolfram Notebook File ***)
+(* http://www.wolfram.com/nb *)
+
+(* CreatedBy='Wolfram 14.1' *)
+
+(*CacheID: 234*)
+(* Internal cache information:
+NotebookFileLineBreakTest
+NotebookFileLineBreakTest
+NotebookDataPosition[       154,          7]
+NotebookDataLength[     17196,        451]
+NotebookOptionsPosition[     14625,        398]
+NotebookOutlinePosition[     15059,        415]
+CellTagsIndexPosition[     15016,        412]
+WindowFrame->Normal*)
+
+(* Beginning of Notebook Content *)
+Notebook[{
+
+Cell[CellGroupData[{
+Cell["DSC 101: Mon 30 Sep", "Subsection",
+ CellChangeTimes->{{3.934816906427898*^9, 3.9348169455050507`*^9}, {
+  3.9349846121454983`*^9, 3.9349846132351027`*^9}, {3.935003980815793*^9, 
+  3.9350039817970343`*^9}, {3.935419863677557*^9, 3.935419863944694*^9}, {
+  3.9362532075649977`*^9, 3.936253207628562*^9}, {3.9366917259142838`*^9, 
+  3.936691727287356*^9}},ExpressionUUID->"9d308f56-fc00-4135-9a93-\
+69f333e89fe7"],
+
+Cell[CellGroupData[{
+
+Cell["Commands covered", "Subsubsection",
+ CellChangeTimes->{{3.93481696144162*^9, 3.9348169661565847`*^9}, 
+   3.935006342205266*^9},ExpressionUUID->"77b2320a-b624-4815-85a0-\
+094197d49ad2"],
+
+Cell["\<\
+Below we use mathematical commands not explained in Wolfram, An Elementary \
+Introduction to the Wolfram Language. Descriptions of their usage and \
+examples may be read in the documentation.\
+\>", "Text",
+ CellChangeTimes->{{3.934817090640691*^9, 3.9348171146464863`*^9}, {
+  3.9349893315669394`*^9, 3.934989335203322*^9}, {3.935419886921261*^9, 
+  3.93541992566573*^9}, {3.935421037052953*^9, 3.935421041787044*^9}, {
+  3.9362518803779507`*^9, 
+  3.936251908883173*^9}},ExpressionUUID->"8a4955cf-f859-461a-a06a-\
+4970d56e5074"],
+
+Cell[CellGroupData[{
+
+Cell["Secondary:", "Subsubsubsection",
+ CellChangeTimes->{{3.934437367357974*^9, 
+  3.934437370398466*^9}},ExpressionUUID->"dfc106c4-60d9-4972-b55f-\
+2d4e0de314bd"],
+
+Cell[BoxData[{
+ RowBox[{"Mesh", " ", 
+  RowBox[{"(*", " ", "again", " ", "*)"}]}], "\n", "GridLines"}], "Input",
+ Evaluatable->False,
+ AutoIndent->False,
+ CellChangeTimes->{{3.93443653511981*^9, 3.9344365409620247`*^9}, {
+   3.934436637376986*^9, 3.9344366409417267`*^9}, {3.93443670535305*^9, 
+   3.9344367581488523`*^9}, {3.9344368452353888`*^9, 3.934436917957253*^9}, {
+   3.934436977115576*^9, 3.934436999544231*^9}, {3.934437111001931*^9, 
+   3.934437111827483*^9}, {3.9344371802529593`*^9, 3.934437195299774*^9}, {
+   3.9348170303710737`*^9, 3.934817031976392*^9}, {3.9348171964253798`*^9, 
+   3.934817205180237*^9}, {3.934817273027775*^9, 3.934817283704191*^9}, {
+   3.9348173539021873`*^9, 3.934817398938004*^9}, {3.934817468103712*^9, 
+   3.934817526636269*^9}, 3.934817610993227*^9, 3.934817902276567*^9, {
+   3.936252259155513*^9, 3.9362522629942923`*^9}, {3.936252745967966*^9, 
+   3.936252761659397*^9}, {3.936252873318615*^9, 3.936252875444048*^9}, {
+   3.936253195131057*^9, 3.936253196560766*^9}, {3.936698215631866*^9, 
+   3.936698225582807*^9}},
+ AutoStyleOptions->{
+ "HighlightSyntaxErrors"->
+  False},ExpressionUUID->"70ae5f4f-833d-4095-9846-938cc155db74"]
+}, Open  ]]
+}, Closed]],
+
+Cell[CellGroupData[{
+
+Cell["Review of equation solving", "Subsubsection",
+ CellChangeTimes->{{3.929386489068638*^9, 3.929386489955401*^9}, {
+  3.93206600210185*^9, 3.932066004691422*^9}, {3.932108094084054*^9, 
+  3.932108096294937*^9}, {3.9360933735621967`*^9, 3.93609338152265*^9}, {
+  3.936251853180833*^9, 3.936251856900147*^9}, {3.936251914192525*^9, 
+  3.936251925707447*^9}, {3.9366917425489407`*^9, 
+  3.9366917442557297`*^9}},ExpressionUUID->"352575d0-cc10-4c79-8a0d-\
+eb7604d5d2e3"],
+
+Cell[CellGroupData[{
+
+Cell["Mini-project: Conclusions? Questions?", "Subsubsubsection",
+ CellChangeTimes->{{3.9366917846075687`*^9, 3.936691796242881*^9}, {
+  3.9366920053953753`*^9, 
+  3.936692008048518*^9}},ExpressionUUID->"b217b64a-85c7-4243-aa2c-\
+6e24d6a85253"],
+
+Cell["What questions did you encounter?", "Text",
+ CellChangeTimes->{{3.936692012987267*^9, 
+  3.936692021845544*^9}},ExpressionUUID->"96054e35-81fe-4846-b1ff-\
+b8feb3080341"],
+
+Cell[TextData[{
+ "What is the mathematical explanation of how to solve ",
+ Cell[BoxData[
+  FormBox[
+   RowBox[{
+    RowBox[{"f", "(", 
+     RowBox[{"g", "(", "x", ")"}], ")"}], "=", "k"}], TraditionalForm]],
+  FormatType->TraditionalForm,ExpressionUUID->
+  "559ebabd-8252-475e-a440-25a26d640652"],
+ "? How does it relate to solving equations in the component functions ",
+ Cell[BoxData[
+  FormBox["f", TraditionalForm]],
+  FormatType->TraditionalForm,ExpressionUUID->
+  "be9c7ed7-22ee-4742-9a53-f16a683d1cea"],
+ " and ",
+ Cell[BoxData[
+  FormBox["g", TraditionalForm]],
+  FormatType->TraditionalForm,ExpressionUUID->
+  "c9d21bb6-ecd7-466a-adc9-c211c09e312b"],
+ "?"
+}], "Text",
+ CellChangeTimes->{{3.9366918481896152`*^9, 3.936691910780205*^9}, {
+  3.936691964161332*^9, 
+  3.936691994799396*^9}},ExpressionUUID->"2e398607-8163-4ac9-9fa0-\
+0307849f04c0"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell["Assumptions in equation solving", "Subsubsubsection",
+ CellChangeTimes->{{3.936692073259427*^9, 
+  3.936692080112853*^9}},ExpressionUUID->"3b394ab8-b86b-4f17-81b7-\
+5d96c633200e"],
+
+Cell[TextData[{
+ "Recall: There are finitely many floating point numbers, and the difference \
+between successive ones changes depending on the magnitude of the numbers. In \
+the codes below, ",
+ Cell[BoxData[
+  FormBox[
+   StyleBox[
+    RowBox[{"2", "^", 
+     RowBox[{"(", 
+      RowBox[{"exp", "-", "53"}], ")"}]}], "Input"], TraditionalForm]],
+  FormatType->TraditionalForm,ExpressionUUID->
+  "147a7076-766e-4937-a39c-023476def5e1"],
+ " is the distance between successive numbers for each particular problem."
+}], "Text",
+ CellChangeTimes->{{3.936694245091661*^9, 3.9366943389208317`*^9}, {
+  3.936694539773839*^9, 
+  3.936694558030856*^9}},ExpressionUUID->"cf6bdd0c-c14a-4373-a09f-\
+20dc4c3d8716"],
+
+Cell[CellGroupData[{
+
+Cell["Example from an earlier class", "Subsubsubsubsection",
+ CellChangeTimes->{{3.936696991181114*^9, 
+  3.936696996175931*^9}},ExpressionUUID->"21f1a8ba-1a32-405d-b20c-\
+533ad56643d4"],
+
+Cell[TextData[{
+ "Does the equation below, ",
+ Cell[BoxData[
+  FormBox[
+   RowBox[{
+    RowBox[{
+     SuperscriptBox["x", "2"], "-", "2"}], "=", "0"}], TraditionalForm]],
+  FormatType->TraditionalForm,ExpressionUUID->
+  "35b6a9be-0c55-47be-ba01-ccc1192bd8f3"],
+ ", have a root? Why? (The question \[OpenCurlyDoubleQuote]why?\
+\[CloseCurlyDoubleQuote] will raise questions of what you are assuming. The \
+question is primarily about mathematics and not about Mathematica.)"
+}], "Text",
+ CellChangeTimes->{{3.9327396998959618`*^9, 3.932739701738371*^9}, {
+  3.9366937719460573`*^9, 3.936693847267749*^9}, {3.936694344565329*^9, 
+  3.93669439776794*^9}, {3.9366944326664257`*^9, 
+  3.936694450170672*^9}},ExpressionUUID->"c6747eec-0af0-422a-8bca-\
+1172be389ff8"],
+
+Cell[BoxData[
+ RowBox[{
+  RowBox[{"(*", " ", 
+   RowBox[{"From", " ", "an", " ", "earlier", " ", "class"}], " ", "*)"}], 
+  "\[IndentingNewLine]", 
+  RowBox[{
+   RowBox[{
+    RowBox[{"x0", "=", 
+     RowBox[{"N", "[", 
+      RowBox[{"Sqrt", "[", "2", "]"}], "]"}]}], ";"}], "\[IndentingNewLine]", 
+   
+   RowBox[{
+    RowBox[{"exp", "=", 
+     RowBox[{"Last", "@", 
+      RowBox[{"MantissaExponent", "[", 
+       RowBox[{"x0", ",", "2"}], "]"}]}]}], ";"}], "\[IndentingNewLine]", 
+   RowBox[{
+    RowBox[{"xvalues", "=", "\[IndentingNewLine]", 
+     RowBox[{"Table", "[", 
+      RowBox[{
+       RowBox[{"x0", "+", 
+        RowBox[{
+         RowBox[{"2", "^", 
+          RowBox[{"(", 
+           RowBox[{"exp", "-", "53"}], ")"}]}], "t"}]}], ",", 
+       RowBox[{"{", 
+        RowBox[{"t", ",", 
+         RowBox[{"-", "5"}], ",", "5"}], "}"}]}], "]"}]}], ";"}], 
+   "\[IndentingNewLine]", 
+   RowBox[{"(*", " ", 
+    RowBox[{
+    "shows", " ", "how", " ", "close", " ", "successive", " ", "values", " ", 
+     "of", " ", "x", " ", "are"}], " ", "*)"}], "\[IndentingNewLine]", 
+   RowBox[{
+    RowBox[{"xvalues", "//", "Differences"}], "//", "DeleteDuplicates"}], " ",
+    "\[IndentingNewLine]", 
+   RowBox[{"ListPlot", "[", "\[IndentingNewLine]", 
+    RowBox[{
+     RowBox[{"Table", "[", 
+      RowBox[{
+       RowBox[{
+        RowBox[{"x", "^", "2"}], "-", "2"}], ",", 
+       RowBox[{"{", 
+        RowBox[{"x", ",", "xvalues"}], "}"}]}], "]"}], ",", 
+     "\[IndentingNewLine]", 
+     RowBox[{"DataRange", "->", 
+      RowBox[{"{", 
+       RowBox[{
+        RowBox[{"-", "5"}], ",", "5"}], "}"}]}]}], "]"}], 
+   "\[IndentingNewLine]", 
+   RowBox[{
+    RowBox[{
+     RowBox[{"SetPrecision", "[", 
+      RowBox[{"x0", ",", "Infinity"}], "]"}], "-", 
+     RowBox[{"Sqrt", "[", "2", "]"}]}], ">", "0"}], " ", 
+   RowBox[{"(*", " ", 
+    RowBox[{"not", "/", 
+     RowBox[{"equal", "?"}]}], " ", "*)"}], "\[IndentingNewLine]", 
+   RowBox[{"N", "[", 
+    RowBox[{
+     RowBox[{
+      RowBox[{"SetPrecision", "[", 
+       RowBox[{"x0", ",", "Infinity"}], "]"}], "-", 
+      RowBox[{"Sqrt", "[", "2", "]"}]}], ",", "6"}], "]"}]}]}]], "Input",
+ CellChangeTimes->CompressedData["
+1:eJxTTMoPSmViYGAQBWIQrfR2o8VWt7eOUu+9AkD0lbxX4SC6x/pxLIgO6Q+p
+AstvXVEPovulLzaDaL8ZbT0guiD7z0QQ/WXy2kkgOlXqzzQQHSUjOwNEN126
+mLQNSKewHUgF0T2r5/Hy+751fNcVLQqi170zkATRXlPE1UC0VnONFohO/b/a
+FkS7KFc5gmi3ONVIED0hojIWRG9ZfLoSzI/cXguid7swtILoOdEV00B0Eduu
+hSC696KbgDSQZjh1QhZEr8g7owyiM6r/qYDo/weUtUD0OyEbXRB9ac1sIxBt
+5PAGTBvMD3+7NASoz/zIFxCtmakkvQxIa605KQOij/0z818OpDUWtASAaACv
+RJ3G
+  "],ExpressionUUID->"62863b01-4048-454e-aa44-759428c376ca"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell["Another example", "Subsubsubsubsection",
+ CellChangeTimes->{{3.936696991181114*^9, 
+  3.93669701157412*^9}},ExpressionUUID->"91b8e59c-706f-47c5-a86f-\
+575bc892bc9a"],
+
+Cell[TextData[{
+ "Does the equation below, ",
+ Cell[BoxData[
+  FormBox[
+   RowBox[{
+    SuperscriptBox["e", "x"], "=", 
+    RowBox[{"sinc", "(", 
+     RowBox[{"1", "-", "x"}], ")"}]}], TraditionalForm]],
+  FormatType->TraditionalForm,ExpressionUUID->
+  "6b3a6ac4-bc57-44d7-ad3c-13d4a6003601"],
+ ", have a root? Why? [Don\[CloseCurlyQuote]t know what the sinc(x) function \
+is? Don\[CloseCurlyQuote]t worry, Mathematica does! Plus you can look it up. \
+\[HappySmiley]]"
+}], "Text",
+ CellChangeTimes->{{3.9327396998959618`*^9, 3.932739701738371*^9}, {
+  3.9366937719460573`*^9, 3.936693847267749*^9}, {3.936694091473193*^9, 
+  3.93669410961462*^9}, {3.9366945801700783`*^9, 
+  3.9366946455930357`*^9}},ExpressionUUID->"0cff174a-4242-4fab-acbf-\
+1a4fdf0c2b7b"],
+
+Cell[BoxData[{
+ RowBox[{
+  RowBox[{"x0", "=", 
+   RowBox[{"-", "0.298990754620075915072`"}]}], 
+  ";"}], "\[IndentingNewLine]", 
+ RowBox[{
+  RowBox[{"exp", "=", 
+   RowBox[{"Last", "@", 
+    RowBox[{"MantissaExponent", "[", 
+     RowBox[{"x0", ",", "2"}], "]"}]}]}], ";"}], "\[IndentingNewLine]", 
+ RowBox[{
+  RowBox[{"xvalues", "=", "\[IndentingNewLine]", 
+   RowBox[{"Table", "[", 
+    RowBox[{
+     RowBox[{"x0", "+", 
+      RowBox[{
+       RowBox[{"2", "^", 
+        RowBox[{"(", 
+         RowBox[{"exp", "-", "53"}], ")"}]}], "t"}]}], ",", 
+     RowBox[{"{", 
+      RowBox[{"t", ",", 
+       RowBox[{"-", "10"}], ",", "10"}], "}"}]}], "]"}]}], 
+  ";"}], "\[IndentingNewLine]", 
+ RowBox[{
+  RowBox[{"xvalues", "//", "Differences"}], "//", 
+  "DeleteDuplicates"}], "\[IndentingNewLine]", 
+ RowBox[{"ListPlot", "[", "\[IndentingNewLine]", 
+  RowBox[{
+   RowBox[{"Table", "[", 
+    RowBox[{
+     RowBox[{
+      RowBox[{"Exp", "[", "x", "]"}], "-", 
+      RowBox[{"Sinc", "[", 
+       RowBox[{"1", "-", "x"}], "]"}]}], ",", 
+     RowBox[{"{", 
+      RowBox[{"x", ",", "xvalues"}], "}"}]}], "]"}], ",", 
+   "\[IndentingNewLine]", 
+   RowBox[{"DataRange", "->", 
+    RowBox[{"{", 
+     RowBox[{
+      RowBox[{"-", "10"}], ",", "10"}], "}"}]}]}], "]"}]}], "Input",
+ CellChangeTimes->{{3.929385413560197*^9, 3.929385602341687*^9}, {
+   3.929385663326029*^9, 3.929385711101019*^9}, {3.929385938642496*^9, 
+   3.929385981272107*^9}, {3.929386014534614*^9, 3.929386084206092*^9}, {
+   3.929386127888115*^9, 3.9293861334243107`*^9}, {3.929386167878222*^9, 
+   3.929386176909711*^9}, {3.9293877985569468`*^9, 3.92938782200078*^9}, {
+   3.932715116958441*^9, 3.932715178860709*^9}, {3.9327152095291357`*^9, 
+   3.9327153127368517`*^9}, {3.932715347891011*^9, 3.932715501374926*^9}, {
+   3.932715531816805*^9, 3.932715721167758*^9}, {3.932715755792061*^9, 
+   3.9327159823637333`*^9}, {3.932716013729683*^9, 3.93271607200839*^9}, {
+   3.932716211761183*^9, 3.932716301813287*^9}, {3.93273971421308*^9, 
+   3.932739822274658*^9}, {3.932739870388508*^9, 3.9327398799525642`*^9}, {
+   3.932739921117309*^9, 3.9327399458773108`*^9}, {3.932739988864846*^9, 
+   3.9327399913828363`*^9}, 3.936693860898448*^9, {3.936693913987479*^9, 
+   3.936693996659683*^9}, {3.936694034083531*^9, 3.936694064393997*^9}, 
+   3.936694118186821*^9, 3.9366942226879883`*^9, {3.936694465705318*^9, 
+   3.936694480123233*^9}},
+ CellLabel->
+  "In[182]:=",ExpressionUUID->"e3bf312a-09ac-45a0-8d64-009b62046b19"]
+}, Open  ]]
+}, Open  ]]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell["Class Activity", "Subsubsection",
+ CellChangeTimes->{{3.9362542162483892`*^9, 3.936254217416038*^9}, {
+  3.936256429413884*^9, 
+  3.9362564301770983`*^9}},ExpressionUUID->"25704ecc-740b-4c65-9cec-\
+c9bf060244a3"],
+
+Cell[TextData[{
+ "Discuss how to solve equations of the form ",
+ Cell[BoxData[
+  FormBox[
+   RowBox[{
+    RowBox[{"f", "(", 
+     RowBox[{"g", "(", 
+      RowBox[{"h", "(", "x", ")"}], ")"}], ")"}], "=", "k"}], 
+   TraditionalForm]],ExpressionUUID->"3d57950e-0a15-4ff8-9741-56e1ef989604"],
+ ", where ",
+ Cell[BoxData[
+  FormBox["f", TraditionalForm]],ExpressionUUID->
+  "45bfd249-21e8-4e48-a112-05a8bab98d29"],
+ ", ",
+ Cell[BoxData[
+  FormBox["g", TraditionalForm]],ExpressionUUID->
+  "34fbb7a1-11ee-4d27-b266-058af019a684"],
+ ", and ",
+ Cell[BoxData[
+  FormBox["h", TraditionalForm]],
+  FormatType->TraditionalForm,ExpressionUUID->
+  "c832851a-ef6c-4af2-a83a-b305c1ed41a6"],
+ " are functions and ",
+ Cell[BoxData[
+  FormBox["k", TraditionalForm]],ExpressionUUID->
+  "89423454-4933-4ea8-91f5-45848dcff915"],
+ " is a constant. What\[CloseCurlyQuote]s a good example, one you cannot \
+solve but Mathematica can? Can you illustrate the process in Mathematica?"
+}], "Text",
+ CellChangeTimes->{{3.9362564835304527`*^9, 3.936256525108357*^9}, {
+  3.936256595650322*^9, 3.9362566189536123`*^9}, {3.9366946794904823`*^9, 
+  3.9366947182697487`*^9}, {3.936694783144558*^9, 
+  3.936694840951449*^9}},ExpressionUUID->"138b3c8c-9dc8-4f38-b82b-\
+d0a666b4a022"],
+
+Cell["Submit your illustration on Canvas.", "Text",
+ CellChangeTimes->{{3.936695934017049*^9, 
+  3.936695943435462*^9}},ExpressionUUID->"9ab6bdac-e20a-4888-8f7d-\
+f5c96b58f4bc"]
+}, Open  ]]
+}, Open  ]]
+},
+WindowSize->{994, 911},
+WindowMargins->{{0, Automatic}, {Automatic, 70}},
+TaggingRules-><|"TryRealOnly" -> False|>,
+FrontEndVersion->"14.1 for Mac OS X ARM (64-bit) (July 16, 2024)",
+StyleDefinitions->"Default.nb",
+ExpressionUUID->"215da7dc-f76a-435a-8b18-f7f1e39ab404"
+]
+(* End of Notebook Content *)
+
+(* Internal cache information *)
+(*CellTagsOutline
+CellTagsIndex->{}
+*)
+(*CellTagsIndex
+CellTagsIndex->{}
+*)
+(*NotebookFileOutline
+Notebook[{
+Cell[CellGroupData[{
+Cell[576, 22, 418, 6, 79, "Subsection",ExpressionUUID->"9d308f56-fc00-4135-9a93-69f333e89fe7"],
+Cell[CellGroupData[{
+Cell[1019, 32, 191, 3, 65, "Subsubsection",ExpressionUUID->"77b2320a-b624-4815-85a0-094197d49ad2"],
+Cell[1213, 37, 539, 10, 116, "Text",ExpressionUUID->"8a4955cf-f859-461a-a06a-4970d56e5074"],
+Cell[CellGroupData[{
+Cell[1777, 51, 164, 3, 46, "Subsubsubsection",ExpressionUUID->"dfc106c4-60d9-4972-b55f-2d4e0de314bd"],
+Cell[1944, 56, 1176, 20, 74, "Input",ExpressionUUID->"70ae5f4f-833d-4095-9846-938cc155db74",
+ Evaluatable->False]
+}, Open  ]]
+}, Closed]],
+Cell[CellGroupData[{
+Cell[3169, 82, 469, 7, 51, "Subsubsection",ExpressionUUID->"352575d0-cc10-4c79-8a0d-eb7604d5d2e3"],
+Cell[CellGroupData[{
+Cell[3663, 93, 244, 4, 46, "Subsubsubsection",ExpressionUUID->"b217b64a-85c7-4243-aa2c-6e24d6a85253"],
+Cell[3910, 99, 175, 3, 50, "Text",ExpressionUUID->"96054e35-81fe-4846-b1ff-b8feb3080341"],
+Cell[4088, 104, 853, 24, 83, "Text",ExpressionUUID->"2e398607-8163-4ac9-9fa0-0307849f04c0"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[4978, 133, 185, 3, 46, "Subsubsubsection",ExpressionUUID->"3b394ab8-b86b-4f17-81b7-5d96c633200e"],
+Cell[5166, 138, 702, 17, 149, "Text",ExpressionUUID->"cf6bdd0c-c14a-4373-a09f-20dc4c3d8716"],
+Cell[CellGroupData[{
+Cell[5893, 159, 186, 3, 44, "Subsubsubsubsection",ExpressionUUID->"21f1a8ba-1a32-405d-b20c-533ad56643d4"],
+Cell[6082, 164, 759, 17, 116, "Text",ExpressionUUID->"c6747eec-0af0-422a-8bca-1172be389ff8"],
+Cell[6844, 183, 2602, 72, 381, "Input",ExpressionUUID->"62863b01-4048-454e-aa44-759428c376ca"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[9483, 260, 171, 3, 44, "Subsubsubsubsection",ExpressionUUID->"91b8e59c-706f-47c5-a86f-575bc892bc9a"],
+Cell[9657, 265, 757, 18, 83, "Text",ExpressionUUID->"0cff174a-4242-4fab-acbf-1a4fdf0c2b7b"],
+Cell[10417, 285, 2471, 58, 258, "Input",ExpressionUUID->"e3bf312a-09ac-45a0-8d64-009b62046b19"]
+}, Open  ]]
+}, Open  ]]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[12949, 350, 218, 4, 65, "Subsubsection",ExpressionUUID->"25704ecc-740b-4c65-9cec-c9bf060244a3"],
+Cell[13170, 356, 1247, 33, 116, "Text",ExpressionUUID->"138b3c8c-9dc8-4f38-b82b-d0a666b4a022"],
+Cell[14420, 391, 177, 3, 50, "Text",ExpressionUUID->"9ab6bdac-e20a-4888-8f7d-f5c96b58f4bc"]
+}, Open  ]]
+}, Open  ]]
+}
+]
+*)
+

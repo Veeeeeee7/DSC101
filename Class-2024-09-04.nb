@@ -1,0 +1,323 @@
+(* Content-type: application/vnd.wolfram.mathematica *)
+
+(*** Wolfram Notebook File ***)
+(* http://www.wolfram.com/nb *)
+
+(* CreatedBy='Wolfram 14.1' *)
+
+(*CacheID: 234*)
+(* Internal cache information:
+NotebookFileLineBreakTest
+NotebookFileLineBreakTest
+NotebookDataPosition[       154,          7]
+NotebookDataLength[     10923,        315]
+NotebookOptionsPosition[      8166,        257]
+NotebookOutlinePosition[      8606,        274]
+CellTagsIndexPosition[      8563,        271]
+WindowFrame->Normal*)
+
+(* Beginning of Notebook Content *)
+Notebook[{
+
+Cell[CellGroupData[{
+Cell["DSC 101: Wed 4 Sep", "Subsubsection",
+ CellChangeTimes->{{3.934436257361364*^9, 
+  3.934436273861105*^9}},ExpressionUUID->"6263a96d-324d-4292-b143-\
+8d85dd037a34"],
+
+Cell["Wolfram, An Elementary Introduction to the Wolfram Language", "Text",
+ CellChangeTimes->{{3.934436324905891*^9, 
+  3.9344363818463182`*^9}},ExpressionUUID->"753e3fb0-ea55-42b6-b34e-\
+b62106eef4cb"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell["What is math?", "Subsubsection",
+ CellChangeTimes->{{3.9344364435223618`*^9, 
+  3.934436449209385*^9}},ExpressionUUID->"5db5f65b-6ee6-453d-92f4-\
+2d038e565918"],
+
+Cell[CellGroupData[{
+
+Cell[TextData[StyleBox["What it is",
+ FontSlant->"Italic"]], "Subsubsubsection",
+ CellChangeTimes->{{3.934446098812134*^9, 
+  3.9344461003680897`*^9}},ExpressionUUID->"34a99a43-f0eb-4203-ac0e-\
+3d7f4fa787c0"],
+
+Cell[TextData[{
+ "Study of ",
+ StyleBox["logic",
+  FontWeight->"Bold"],
+ "\nStudy of ",
+ StyleBox["patterns",
+  FontWeight->"Bold"],
+ ", numbers, formulas",
+ "\nA ",
+ StyleBox["language",
+  FontWeight->"Bold"],
+ "\nA ",
+ StyleBox["tool",
+  FontWeight->"Bold"],
+ " for ",
+ StyleBox["quantifying",
+  FontWeight->"Bold"]
+}], "Text",
+ CellChangeTimes->{{3.934441087583878*^9, 3.934441093809424*^9}, {
+  3.934441219178851*^9, 3.9344412574667673`*^9}, {3.934446170773917*^9, 
+  3.934446176704599*^9}, {3.9344462673505173`*^9, 
+  3.934446268833881*^9}},ExpressionUUID->"d76f74ad-d12d-457c-81de-\
+e291da881f9b"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[TextData[StyleBox["How it is constructed",
+ FontSlant->"Italic"]], "Subsubsubsection",
+ CellChangeTimes->{{3.934446232029479*^9, 
+  3.934446242723084*^9}},ExpressionUUID->"893030af-c961-4ee2-b374-\
+5bceef9a97bd"],
+
+Cell[TextData[{
+ "Based on ",
+ StyleBox["theorems",
+  FontWeight->"Bold"],
+ " and ",
+ StyleBox["axioms",
+  FontWeight->"Bold"]
+}], "Text",
+ CellChangeTimes->{{3.9344462487881107`*^9, 
+  3.934446254105772*^9}},ExpressionUUID->"fab0272b-0482-45b6-83ea-\
+70a9febf2f3a"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[TextData[StyleBox["How it functions",
+ FontSlant->"Italic"]], "Subsubsubsection",
+ CellChangeTimes->{{3.9344461077935762`*^9, 
+  3.9344461103100367`*^9}},ExpressionUUID->"7f1058e3-3284-4473-95f0-\
+cbf63fb45c97"],
+
+Cell[TextData[{
+ "To ",
+ StyleBox["understand",
+  FontWeight->"Bold"],
+ " [something outside of mathematics]:\n\tThe universe\n\tThe world; also the \
+real world\n\tOther disciplines (see following)\nA ",
+ StyleBox["foundation",
+  FontWeight->"Bold"],
+ " for other disciplines\nA language for ",
+ StyleBox["communication",
+  FontWeight->"Bold"],
+ "\nSeen almost everywhere in our life"
+}], "Text",
+ CellChangeTimes->{{3.9344411827546453`*^9, 3.934441204594552*^9}, {
+  3.934446088156662*^9, 3.934446090236444*^9}, {3.9344461362917337`*^9, 
+  3.934446146869124*^9}, {3.934446449679805*^9, 3.934446459660825*^9}, {
+  3.934446511171817*^9, 3.9344465207912483`*^9}, {3.934446555690015*^9, 
+  3.934446564295855*^9}},ExpressionUUID->"f81ca94e-e1a0-4ade-acef-\
+d9cf43e30d7d"]
+}, Open  ]]
+}, Closed]],
+
+Cell[CellGroupData[{
+
+Cell["Key commands covered", "Subsubsection",
+ CellChangeTimes->{{3.9344363902183867`*^9, 
+  3.934436396159544*^9}},ExpressionUUID->"7ef021fd-3dfe-4b2b-9729-\
+c817b84f8b6d"],
+
+Cell[CellGroupData[{
+
+Cell["Important:", "Subsubsubsection",
+ CellChangeTimes->{{3.934437327942857*^9, 
+  3.934437357589756*^9}},ExpressionUUID->"8778d849-f522-4dc4-90c3-\
+cba0607ded5d"],
+
+Cell[BoxData[{
+ RowBox[{"+", 
+  RowBox[{",", 
+   RowBox[{"-", 
+    RowBox[{",", 
+     RowBox[{"*", 
+      RowBox[{",", 
+       RowBox[{"/", 
+        RowBox[{",", 
+         RowBox[{"^", "\n", "Plus"}], ",", "Subtract", ",", "Times", ",", 
+         "Divide", ",", "Power"}]}]}]}]}]}]}]}], "\n", 
+ RowBox[{"Min", ",", "Max"}], "\n", 
+ RowBox[{
+  RowBox[{"[", "]"}], " ", 
+  RowBox[{"(*", " ", 
+   RowBox[{"function", " ", "single", " ", "brackets", " ", 
+    RowBox[{"(", 
+     RowBox[{"argument", " ", "delimiters"}], ")"}]}], " ", "*)"}]}], "\n", 
+ RowBox[{
+  RowBox[{"{", "}"}], " ", 
+  RowBox[{"(*", " ", 
+   RowBox[{"List", " ", "braces"}], " ", "*)"}]}], "\n", 
+ RowBox[{
+  RowBox[{"[", 
+   RowBox[{"[", "]"}], "]"}], " ", 
+  RowBox[{"(*", " ", 
+   RowBox[{"Part", " ", "double", " ", "brackets"}], " ", "*)"}]}], "\n", 
+ RowBox[{"ListPlot", ",", "ListLinePlot"}], "\n", 
+ RowBox[{"Range", ",", "Table"}], "\n", 
+ RowBox[{"Length", ",", "Total", ",", "\n", "First", ",", "Last", ",", "Part",
+   ",", "Take", ",", "Drop"}], "\n"}], "Input",
+ Evaluatable->False,
+ AutoIndent->False,
+ CellChangeTimes->{{3.93443653511981*^9, 3.9344365409620247`*^9}, {
+  3.934436637376986*^9, 3.9344366409417267`*^9}, {3.93443670535305*^9, 
+  3.9344367581488523`*^9}, {3.9344368452353888`*^9, 3.934436917957253*^9}, {
+  3.934436977115576*^9, 3.934437059398491*^9}, {3.9344370922686443`*^9, 
+  3.9344371397693577`*^9}},
+ AutoStyleOptions->{
+ "HighlightSyntaxErrors"->
+  False},ExpressionUUID->"61363d34-c909-4b09-984c-25a2104571a9"],
+
+Cell["Number arithmetic v. list arithmetic", "Text",
+ CellChangeTimes->{{3.9344372897802896`*^9, 
+  3.934437322023301*^9}},ExpressionUUID->"1f1165e8-0595-423c-8cde-\
+02d4584e5212"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell["Secondary:", "Subsubsubsection",
+ CellChangeTimes->{{3.934437367357974*^9, 
+  3.934437370398466*^9}},ExpressionUUID->"f33319f7-4314-4aff-8a99-\
+a6ecec211985"],
+
+Cell[BoxData[{
+ RowBox[{"Sort", ",", "Join", ",", "Reverse", ",", "Count"}], "\n", 
+ RowBox[{"RandomInteger", " ", 
+  RowBox[{"(*", " ", 
+   RowBox[{"later", " ", "RandomReal"}], " ", 
+   "*)"}]}], "\n", "Column"}], "Input",
+ Evaluatable->False,
+ AutoIndent->False,
+ CellChangeTimes->{{3.93443653511981*^9, 3.9344365409620247`*^9}, {
+  3.934436637376986*^9, 3.9344366409417267`*^9}, {3.93443670535305*^9, 
+  3.9344367581488523`*^9}, {3.9344368452353888`*^9, 3.934436917957253*^9}, {
+  3.934436977115576*^9, 3.934436999544231*^9}, {3.934437111001931*^9, 
+  3.934437111827483*^9}, {3.9344371802529593`*^9, 3.934437195299774*^9}, {
+  3.9348170303710737`*^9, 3.934817031976392*^9}},
+ AutoStyleOptions->{
+ "HighlightSyntaxErrors"->
+  False},ExpressionUUID->"786d4f9a-ded4-4060-b3d2-3c45f4edff38"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell["Unimportant", "Subsubsubsection",
+ CellChangeTimes->{{3.934437380967608*^9, 
+  3.934437383416052*^9}},ExpressionUUID->"b90de73c-7cd6-4d4b-88ac-\
+0cbc348385b7"],
+
+Cell[BoxData[{"IntegerDigits", "\n", 
+ RowBox[{"BarChart", ",", " ", "PieChart", ",", "NumberLinePlot"}]}], "Input",\
+
+ Evaluatable->False,
+ AutoIndent->False,
+ CellChangeTimes->{{3.934436804160102*^9, 3.934436823408477*^9}, 
+   3.9344369815715446`*^9, {3.934437221001005*^9, 3.934437224871773*^9}, 
+   3.934440975374309*^9, {3.934816977125053*^9, 3.934817017438683*^9}},
+ AutoStyleOptions->{
+ "HighlightSyntaxErrors"->
+  False},ExpressionUUID->"4d09d258-392c-48c6-9c4d-c8be441148bd"]
+}, Open  ]]
+}, Closed]],
+
+Cell["Questions on exercises", "Subsubsection",
+ CellChangeTimes->{{3.9344409293714933`*^9, 
+  3.934440935859014*^9}},ExpressionUUID->"a9ce9cdc-162c-4bc3-8983-\
+acbdedf4a298"],
+
+Cell["Getting help from Mathematica", "Subsubsection",
+ CellChangeTimes->{{3.934441021116951*^9, 
+  3.9344410274643497`*^9}},ExpressionUUID->"9e09ca5c-476e-4330-8ccf-\
+a24d0ebb9958"],
+
+Cell[CellGroupData[{
+
+Cell["Exercise", "Subsubsection",
+ CellChangeTimes->{{3.934451806688373*^9, 
+  3.934451809672009*^9}},ExpressionUUID->"bc5318ec-47fe-4ade-8fb6-\
+de2d31bd6169"],
+
+Cell["[Hint for instructor: plot to table to fancy plot]", "Text",
+ CellChangeTimes->{{3.934451712340579*^9, 3.934451737521844*^9}, {
+  3.934451790125997*^9, 
+  3.934451792662633*^9}},ExpressionUUID->"4a65eea9-c25d-4846-92cc-\
+ecde4f35f550"]
+}, Closed]]
+},
+WindowSize->{991, 911},
+WindowMargins->{{-3423, Automatic}, {-658, Automatic}},
+TaggingRules-><|"TryRealOnly" -> False|>,
+FrontEndVersion->"14.1 for Mac OS X ARM (64-bit) (July 16, 2024)",
+StyleDefinitions->"Default.nb",
+ExpressionUUID->"98632131-bc35-4ada-b6d0-c909855c7235"
+]
+(* End of Notebook Content *)
+
+(* Internal cache information *)
+(*CellTagsOutline
+CellTagsIndex->{}
+*)
+(*CellTagsIndex
+CellTagsIndex->{}
+*)
+(*NotebookFileOutline
+Notebook[{
+Cell[CellGroupData[{
+Cell[576, 22, 169, 3, 65, "Subsubsection",ExpressionUUID->"6263a96d-324d-4292-b143-8d85dd037a34"],
+Cell[748, 27, 203, 3, 50, "Text",ExpressionUUID->"753e3fb0-ea55-42b6-b34e-b62106eef4cb"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[988, 35, 166, 3, 65, "Subsubsection",ExpressionUUID->"5db5f65b-6ee6-453d-92f4-2d038e565918"],
+Cell[CellGroupData[{
+Cell[1179, 42, 208, 4, 46, "Subsubsubsection",ExpressionUUID->"34a99a43-f0eb-4203-ac0e-3d7f4fa787c0"],
+Cell[1390, 48, 603, 22, 149, "Text",ExpressionUUID->"d76f74ad-d12d-457c-81de-e291da881f9b"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[2030, 75, 217, 4, 46, "Subsubsubsection",ExpressionUUID->"893030af-c961-4ee2-b374-5bceef9a97bd"],
+Cell[2250, 81, 266, 10, 50, "Text",ExpressionUUID->"fab0272b-0482-45b6-83ea-70a9febf2f3a"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[2553, 96, 216, 4, 46, "Subsubsubsection",ExpressionUUID->"7f1058e3-3284-4473-95f0-cbf63fb45c97"],
+Cell[2772, 102, 768, 18, 247, "Text",ExpressionUUID->"f81ca94e-e1a0-4ade-acef-d9cf43e30d7d"]
+}, Open  ]]
+}, Closed]],
+Cell[CellGroupData[{
+Cell[3589, 126, 173, 3, 51, "Subsubsection",ExpressionUUID->"7ef021fd-3dfe-4b2b-9729-c817b84f8b6d"],
+Cell[CellGroupData[{
+Cell[3787, 133, 164, 3, 46, "Subsubsubsection",ExpressionUUID->"8778d849-f522-4dc4-90c3-cba0607ded5d"],
+Cell[3954, 138, 1514, 40, 350, "Input",ExpressionUUID->"61363d34-c909-4b09-984c-25a2104571a9",
+ Evaluatable->False],
+Cell[5471, 180, 180, 3, 50, "Text",ExpressionUUID->"1f1165e8-0595-423c-8cde-02d4584e5212"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[5688, 188, 164, 3, 46, "Subsubsubsection",ExpressionUUID->"f33319f7-4314-4aff-8a99-a6ecec211985"],
+Cell[5855, 193, 791, 16, 105, "Input",ExpressionUUID->"786d4f9a-ded4-4060-b3d2-3c45f4edff38",
+ Evaluatable->False]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[6683, 214, 165, 3, 46, "Subsubsubsection",ExpressionUUID->"b90de73c-7cd6-4d4b-88ac-0cbc348385b7"],
+Cell[6851, 219, 484, 10, 74, "Input",ExpressionUUID->"4d09d258-392c-48c6-9c4d-c8be441148bd",
+ Evaluatable->False]
+}, Open  ]]
+}, Closed]],
+Cell[7362, 233, 175, 3, 51, "Subsubsection",ExpressionUUID->"a9ce9cdc-162c-4bc3-8983-acbdedf4a298"],
+Cell[7540, 238, 182, 3, 51, "Subsubsection",ExpressionUUID->"9e09ca5c-476e-4330-8ccf-a24d0ebb9958"],
+Cell[CellGroupData[{
+Cell[7747, 245, 159, 3, 51, "Subsubsection",ExpressionUUID->"bc5318ec-47fe-4ade-8fb6-de2d31bd6169"],
+Cell[7909, 250, 241, 4, 50, "Text",ExpressionUUID->"4a65eea9-c25d-4846-92cc-ecde4f35f550"]
+}, Closed]]
+}
+]
+*)
+
